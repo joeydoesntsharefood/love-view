@@ -9,7 +9,7 @@ type Translations = {
 const I18nContext = createContext({
   lang: 'en',
   t: (key: string) => key,
-  setLanguage: (lang: string) => {}
+  setLanguage: (lang: string) => console.log(lang),
 });
 
 export const I18nProvider = ({ children }: { children: React.ReactNode }) => {
